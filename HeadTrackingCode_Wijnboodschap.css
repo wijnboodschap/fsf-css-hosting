@@ -1,0 +1,252 @@
+/* ------------------------------
+   Universele button styling 
+   voor .Button_Default_RedGold
+   ------------------------------ */
+
+/* 1) Basisselector met ID of container: 
+   voorkom dat het elders overschreven wordt. 
+   2) Voeg de generieke .cbutton-... en .Button_Default_RedGold samen 
+   zodat we minstens even specifiek zijn als de page builder. */
+
+   .hl_page-preview--content .Button_Default_RedGold,
+   .hl_page-preview--content .cbutton-9qoM31d7GI.Button_Default_RedGold,
+   #site .Button_Default_RedGold {
+       font-family: 'Marcellus SC', serif !important;
+       font-size: 16px !important;
+       font-weight: 700 !important;
+       letter-spacing: 1px !important;
+       color: #FFC300 !important;
+       background-color: #5F021F !important;
+       padding: 8px 18px !important;
+       border: none !important;
+       border-radius: 18px !important;
+       text-transform: none !important;
+       text-align: center !important;
+       text-decoration: none !important;
+       display: inline-block !important;
+       transition: all 0.2s ease-in-out !important;
+       box-shadow: 2px 2px 3px rgba(0,0,0,0.2) !important;
+       animation: zoomIn 0.4s ease-in-out 1 forwards !important;
+    /* optioneel */
+   }
+   
+   /* Hover staat los, maar ook hier extra specificiteit: */
+   .hl_page-preview--content .Button_Default_RedGold:hover,
+   .hl_page-preview--content .cbutton-9qoM31d7GI.Button_Default_RedGold:hover,
+   #site .Button_Default_RedGold:hover {
+       background-color: #4A0119 !important;
+       box-shadow: 3px 3px 5px rgba(0,0,0,0.3) !important;
+       transform: scale(1.04) !important;
+   }
+   
+   /* (Eventueel kun je nog je .zoomIn of .rocking keyframes toevoegen) */
+   @keyframes zoomIn {
+       0% {
+           transform: scale(0.9);
+       }
+   
+       100% {
+           transform: scale(1);
+       }
+   }
+   
+   
+   /* -------------------------------------------------
+      B) Mobiel menu (global)
+      ------------------------------------------------- */
+   .nav-menu-body {
+       font-family: 'Marcellus', serif !important;
+   }
+   
+   .nav-menu-item-title {
+       font-family: 'Marcellus', serif !important;
+       font-size: 18px !important;
+       font-weight: 500 !important;
+       color: #595959 !important;
+   }
+   
+   @media screen and (max-width: 900px) {
+       .nav-menu-i	tem-title {
+           font-weight: 700 !important;
+       }
+   }
+   
+   .nav-menu {
+       list-style: none;
+       padding: 0;
+       margin: 0;
+   }
+   
+   /* -------------------------------------------------
+      C) Footer-styling (global)
+      ------------------------------------------------- */
+   footer {
+       padding: 40px 0;
+       background: linear-gradient(to bottom, #5F021F, #E1B12C);
+       color: #FAF3E0;
+       font-family: 'Marcellus', serif;
+       text-align: center;
+   }
+   
+   footer a {
+       color: #FAF3E0;
+       text-decoration: none;
+       transition: color 0.3s ease;
+   }
+   
+   footer a:hover {
+       color: #FFC300;
+   }
+   
+   .footer-social-icons {
+       display: flex;
+       justify-content: center;
+       gap: 15px;
+   }
+   
+   .footer-social-icons img {
+       width: 30px;
+       height: 30px;
+       transition: transform 0.3s ease-in-out;
+   }
+   
+   .footer-social-icons img:hover {
+       transform: scale(1.1);
+   }
+   
+   .footer-columns {
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       gap: 20px;
+       max-width: 1200px;
+       margin: auto;
+   }
+   
+   /* -------------------------------------------------
+      D) Algemene link-styling
+      ------------------------------------------------- */
+   a {
+       color: inherit;
+       text-decoration: underline;
+       transition: color 0.3s ease;
+   }
+   
+   a:hover {
+       color: #FFC300;
+   }
+   
+   /* -------------------------------------------------
+      E) Globale font-classes
+      ------------------------------------------------- */
+   /* 1. Niet-product gerelateerde headers */
+   .header-cinzel {
+       font-family: 'Cinzel Decorative', serif;
+   }
+   /* 2. Headers voor productteksten: Marcellus SC, 20px */
+   .header-product {
+       font-family: 'Marcellus SC', serif;
+       font-size: 20px;
+   }
+   /* 3. Hoofdtekst: Marcellus */
+   .main-text {
+       font-family: 'Marcellus', serif;
+   }
+   /* 4. Sierlijke teksten: Dancing Script */
+   .dancing-script {
+       font-family: 'Dancing Script', cursive;
+   }
+   
+   
+   
+   /* Algemene styling van het mobiele menu */
+   .nav-menu-body {
+       font-family: 'Marcellus', serif !important;
+   }
+   
+   /* Specifieke styling voor de menu-items */
+   .nav-menu-item-title {
+       font-family: 'Marcellus', serif !important;
+       font-size: 18px !important;
+       font-weight: 500 !important;
+       color: #595959 !important;
+    /* Zorg dat het goed leesbaar is */
+   }
+   
+   /* Optioneel: Zorg dat de lijstitems in het menu correct worden weergegeven */
+   .nav-menu {
+       list-style: none;
+    /* Verwijder eventuele ongewenste opsommingstekens */
+       padding: 0;
+       margin: 0;
+   }
+   
+   
+   /* BUTTON STYLING */
+   /* Standaard button styling */
+   .Button_Default_RedGold {
+       font-family: 'Marcellus SC', serif !important;
+       font-size: 16px !important;
+       font-weight: 700 !important;
+    /* Dikkere tekst voor betere leesbaarheid */
+       color: #FFC300 !important;
+    /* Goudkleur voor tekst */
+       background-color: #5F021F !important;
+    /* Bordeauxrode achtergrond */
+       padding: 8px 18px !important;
+    /* Iets minder padding voor compactere look */
+       border: none !important;
+       border-radius: 18px !important;
+    /* Iets minder rond */
+       letter-spacing: 1px !important;
+       text-transform: none !important;
+       text-align: center !important;
+       text-decoration: none !important;
+       display: inline-block !important;
+       transition: all 0.2s ease-in-out !important;
+       box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) !important;
+    /* Subtielere schaduw */
+   }
+   
+   /* Hover effect */
+   .Button_Default_RedGold:hover {
+       background-color: #4A0119 !important;
+    /* Iets donkerdere bordeauxrode tint */
+       box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3) !important;
+    /* Subtiele versterking */
+       transform: scale(1.04) !important;
+   }
+   
+   /* Entrance rocking animatie (max. 2x herhalen) */
+   @keyframes rocking {
+       0% {
+           transform: rotate(0deg);
+       }
+   
+       25% {
+           transform: rotate(1.5deg);
+       }
+   
+       50% {
+           transform: rotate(-1.5deg);
+       }
+   
+       75% {
+           transform: rotate(1.5deg);
+       }
+   
+       100% {
+           transform: rotate(0deg);
+       }
+   }
+   
+   .Button_Default_RedGold {
+       animation: rocking 0.8s ease-in-out 2 !important;
+    /* Max. 2x voor subtiel effect */
+   }
+   
+   /* Hover elevate effect */
+   .Button_Default_RedGold:hover {
+       transform: translateY(-2px) !important;
+    /* Minder overdreven elevatie */
+   }
